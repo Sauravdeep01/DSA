@@ -4,14 +4,12 @@ public:
         unordered_set<int> seen;
 
         for (int num : nums) {
-            // If number already exists, duplicate found
             if (seen.count(num)) {
                 return true;
             }
             seen.insert(num);
         }
 
-        // No duplicates found
         return false;
     }
 };
