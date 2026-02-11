@@ -15,13 +15,11 @@ public:
             st.push_back(c);
         }
 
-        // If k still left
         while(k > 0 && !st.empty()) {
             st.pop_back();
             k--;
         }
 
-        // Remove leading zeros
         int i = 0;
         while(i < st.length() && st[i] == '0') {
             i++;
