@@ -5,7 +5,6 @@ public:
         int n = text.length();
         vector<int> freq(26, 0);
 
-        // count frequency
         for(int i = 0; i < n; i++)
             freq[text[i] - 'a']++;
 
@@ -26,7 +25,6 @@ public:
                 if(diff > 1)
                     break;
 
-                // allow swap if extra same char exists
                 if(freq[text[i]-'a'] > same)
                     result = max(result, same + 1);
                 else
