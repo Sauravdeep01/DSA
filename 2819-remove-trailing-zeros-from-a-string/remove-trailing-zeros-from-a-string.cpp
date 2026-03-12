@@ -3,7 +3,7 @@ public:
     string removeTrailingZeros(string num) {
         int i = num.length() - 1;
 
-        while(i >= 1 && num[i] == '0') {
+        while(i >= 0 && num[i] == '0') {
             i--;
         }
 
