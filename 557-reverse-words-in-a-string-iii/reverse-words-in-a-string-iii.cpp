@@ -3,7 +3,7 @@ public:
     string reverseWords(string s) {
         int n = s.length();
         
-        for(int i = 0; i < n+1; i++) {
+        for(int i = 0; i < n; i++) {
             int start = i;
             
             while(i < n && s[i] != ' ') {
