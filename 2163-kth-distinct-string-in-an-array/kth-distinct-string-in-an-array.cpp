@@ -11,7 +11,7 @@ public:
                     count++;
                 }
             }
-            
+    
             if(count == 1){
                 k--;
                 if(k == 0)
